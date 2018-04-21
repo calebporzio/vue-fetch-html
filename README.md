@@ -30,8 +30,10 @@ Vue.component('vue-fetch-html', VueFetchHtml)
 
 ```
 <vue-fetch-html url="/some/endpoint">
-  <loading-spinner slot="loading">
+  // This is just a slot - use it however you want
+  <loading-spinner slot="loading"></loading-spinner>
   
-  <whoops-message slot="failed">
+  // This is also just a slot
+  <whoops-message slot="failed"></whoops-message>
 </vue-fetch-html>
 ```
