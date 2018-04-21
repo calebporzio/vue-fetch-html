@@ -1,0 +1,30 @@
+{
+  "name": "vue-fetch-html",
+  "version": "0.0.1",
+  "description": "A simple Vue component to fetch and render html from an endpoint",
+  "main": "dist/vue-fetch-html.js",
+  "scripts": {
+    "dev": "node_modules/.bin/webpack --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/calebporzio/vue-fetch-html"
+  },
+  "keywords": [
+    "vue",
+    "fetch",
+    "html"
+  ],
+  "author": "Caleb Porzio",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "vue-loader": "^14.2.2",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14"
+  },
+  "dependencies": {}
+}
