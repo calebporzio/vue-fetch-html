@@ -30,9 +30,7 @@
         },
 
         mounted() {
-            let axiosImplementation = window.axios || axios
-
-            axiosImplementation.get(this.url)
+            axios.get(this.url)
                 .then(({ data }) => {
                     this.loadedHtml = data;
                 }).catch(() => {
