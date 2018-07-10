@@ -25,11 +25,8 @@
             }
         },
 
-        created() {
-            axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-        },
-
         mounted() {
+            axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
             axios.get(this.url)
                 .then(({ data }) => {
                     this.loadedHtml = data;
