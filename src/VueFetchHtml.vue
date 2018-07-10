@@ -25,6 +25,10 @@
             }
         },
 
+        created() {
+            axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+        },
+
         mounted() {
             let axiosImplementation = window.axios || axios
 
