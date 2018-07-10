@@ -26,8 +26,9 @@
         },
 
         mounted() {
-            axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-            axios.get(this.url)
+            let axiosImplementation = window.axios || axios
+
+            axiosImplementation.get(this.url)
                 .then(({ data }) => {
                     this.loadedHtml = data;
                 }).catch(() => {
